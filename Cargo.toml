@@ -1,0 +1,15 @@
+[package]
+name = "process_reader"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0.45"
+sqlx = { version = "0.5.9", features = ["runtime-tokio-native-tls", "postgres", "uuid", "chrono", "migrate", "bigdecimal"] }
+sysinfo = "0.21.1"
+uuid = { version = "0.8.2", features = ["v4"] }
+chrono = "0.4.19"
+num-traits = "0.2.14"
